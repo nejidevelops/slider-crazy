@@ -59,3 +59,41 @@ header a {
   color: #fff;
   text-shadow: 0 5px 10px #0004;
 }
+
+.carousel .list .item .content .author {
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.carousel .list .item .content .title,
+.carousel .list .item .content .topic {
+  font-weight: bold;
+  font-size: 5em;
+  line-height: 1.3em;
+}
+
+.carousel .list .item .content .topic {
+  color: #f1683a;
+}
+
+.carousel .list .item .content .buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 40px;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.carousel .list .item .content .buttons button {
+  border: none;
+  background-color: #eee;
+  letter-spacing: 3px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.carousel .list .item .content .buttons button:nth-child(2) {
+  background-color: transparent;
+  color: #eee;
+  border: 1px solid #eee;
+}
