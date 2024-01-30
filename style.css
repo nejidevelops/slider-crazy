@@ -182,3 +182,19 @@ header a {
     opacity: 1;
   }
 }
+
+.carousel .list .item:nth-child(1) .title {
+  animation-delay: 1.3s;
+}
+
+.carousel .list .item:nth-child(1) .topic {
+  animation-delay: 1.5s;
+}
+
+.carousel .list .item:nth-child(1) .des {
+  animation-delay: 1.7s;
+}
+
+.carousel .list .item:nth-child(1) .buttons {
+  animation-delay: 1.9s;
+}
