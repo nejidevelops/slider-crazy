@@ -134,6 +134,7 @@ header a {
   position: absolute;
   top: 80%;
   right: 52%;
+  z-index: 100;
   width: 300px;
   max-width: 30%;
   display: flex;
@@ -157,4 +158,27 @@ header a {
 .arrows button:hover {
   background-color: #eee;
   color: #555;
+}
+
+.carousel .list .item:nth-child(1) {
+  z-index: 1;
+}
+
+.carousel .list .item:nth-child(1) .author,
+.carousel .list .item:nth-child(1) .title,
+.carousel .list .item:nth-child(1) .topic,
+.carousel .list .item:nth-child(1) .des,
+.carousel .list .item:nth-child(1) .buttons {
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+@keyframes showContent{
+  to{
+    transform: translateY(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
